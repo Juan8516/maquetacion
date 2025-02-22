@@ -1,0 +1,49 @@
+/*Variables*/
+:root{
+    --ball-width: 340px;
+}
+
+.layout{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+.layout__container{
+    position: relative;
+    width: 900px;
+    height: 600px;
+    overflow: hidden;
+    border: 3px, solid, #e74938;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.layout__img{
+    position: absolute;
+    width: 100%;
+    opacity: 0.5;
+}
+
+.layout__ball{
+    width: var(--ball-width);
+    height: var(--ball-width);
+    border-radius: 50%;
+    border: 19px solid black;
+    overflow: hidden;
+}
+
+.ball__top{
+    background-color: #FE0000;
+    width: var(--ball-width);
+    height: calc(var(--ball-width) / 2.2);
+}
+
+.ball__bottom{
+    background-color: white;
+    width: var(--ball-width);
+    height: calc(var(--ball-width) / 2.2);
+}
