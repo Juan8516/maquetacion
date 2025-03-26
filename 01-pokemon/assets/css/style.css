@@ -3,6 +3,10 @@
     --ball-width: 340px;
 }
 
+body {
+    overflow-y: hidden;
+}
+
 .layout{
     display: flex;
     justify-content: center;
@@ -20,15 +24,18 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    border: 10px solid #d0d538;
 }
 
 .layout__img{
+    display: none;
     position: absolute;
     width: 100%;
     opacity: 0.5;
 }
 
 .layout__ball{
+    position: absolute;
     width: var(--ball-width);
     height: var(--ball-width);
     border-radius: 50%;
@@ -40,6 +47,26 @@
     background-color: #FE0000;
     width: var(--ball-width);
     height: calc(var(--ball-width) / 2.2);
+}
+
+.ball__line {
+    background-color: black;
+    height: 27px;
+    width: var(--ball-width);
+    position: absolute;
+    margin-top: -20px;
+}
+
+.ball__button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100px;
+    height: 100px;
+    border : 15px solid black;
+    border-radius: 50%;
+    background-color: white;
 }
 
 .ball__bottom{
