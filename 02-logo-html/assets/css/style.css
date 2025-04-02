@@ -1,0 +1,31 @@
+/*Variables*/
+body {
+    overflow-y: hidden;
+}
+
+.layout{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+.layout__container{
+    position: relative;
+    width: 900px;
+    height: 600px;
+    overflow: hidden;
+    border: 3px, solid, #e74938;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 10px solid #d0d538;
+}
+
+.layout__img{
+    display: block;
+    position: absolute;
+    opacity: 0.5;
+    width: 550px;
+}
